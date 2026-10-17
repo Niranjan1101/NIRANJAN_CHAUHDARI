@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact | Niranjan Chaudhari</title>
+<meta name="description" content="Contact Niranjan Chaudhari, electrical engineer in Nandurbar, by phone, email or LinkedIn about testing engineer roles and internships.">
+<meta name="theme-color" content="#e3e8ef">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;700&family=Sora:wght@600;700;800&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header wrap">
+  <div class="bar">
+    <a class="logo" href="index.html" aria-label="Niranjan Chaudhari, home">
+      <span class="logo-mark" aria-hidden="true">N</span>
+      <span class="logo-text">Niranjan Chaudhari</span>
+    </a>
+    <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="nav-list" aria-label="Open menu"><span class="bars"></span></button>
+    <nav aria-label="Main">
+      <ul class="nav-list" id="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main class="wrap" id="main">
+
+<section aria-labelledby="contact-h">
+  <div class="section-head">
+    <p class="eyebrow">Contact</p>
+    <h1 id="contact-h" style="font-size:clamp(1.9rem,5vw,2.8rem)">Let's talk</h1>
+    <p class="lede">I am open to testing engineer roles and internships in semiconductor and electronics manufacturing.</p>
+  </div>
+  <div class="contact-grid">
+    <div class="stack">
+      <div class="detail"><span>Phone</span><a href="tel:+919156922510">+91 91569 22510</a></div>
+      <div class="detail"><span>Email</span><a href="mailto:niranjansunilchaudhari@gmail.com">niranjansunilchaudhari@gmail.com</a></div>
+      <div class="detail"><span>LinkedIn</span><a href="https://www.linkedin.com/in/electricalniranjan" target="_blank" rel="noopener noreferrer">linkedin.com/in/electricalniranjan</a></div>
+      <div class="detail"><span>Location</span><b>Nandurbar, Maharashtra 425412</b></div>
+      <div class="actions">
+        <button class="copy-btn" type="button" data-copy="niranjansunilchaudhari@gmail.com">Copy email</button>
+        <button class="copy-btn" type="button" data-copy="+91 91569 22510">Copy phone</button>
+      </div>
+    </div>
+    <div class="card">
+      <h2>Send a message</h2>
+      <form id="contact-form" data-to="niranjansunilchaudhari@gmail.com" novalidate>
+        <div class="field">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" autocomplete="name" placeholder="Your full name" aria-describedby="name-error" required>
+          <p class="error" id="name-error" aria-live="polite"></p>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" placeholder="you@company.com" aria-describedby="email-error" required>
+          <p class="error" id="email-error" aria-live="polite"></p>
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Tell me about the role or project" aria-describedby="message-error" required></textarea>
+          <p class="error" id="message-error" aria-live="polite"></p>
+        </div>
+        <button class="btn primary" type="submit">Send by email</button>
+        <p class="status" id="form-status" role="status" hidden></p>
+        <button class="copy-btn" id="copy-draft" type="button" hidden>Copy message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer wrap">
+  <div class="footer-inner">
+    <p>&copy; <span data-year>2026</span> Niranjan S. Chaudhari</p>
+    <ul class="footer-nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="index.html#certificates">Certificates</a></li>
+      <li><a href="https://www.linkedin.com/in/electricalniranjan" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+      <li><a href="mailto:niranjansunilchaudhari@gmail.com">Email</a></li>
+    </ul>
+  </div>
+</footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="script.js" defer></script>
+</body>
+</html>

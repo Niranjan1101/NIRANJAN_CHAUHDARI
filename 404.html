@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Page not found | Niranjan Chaudhari</title>
+<meta name="description" content="The page you were looking for could not be found. Return to the portfolio of Niranjan Chaudhari.">
+<meta name="theme-color" content="#e3e8ef">
+<script>
+(function () {
+  var root = document.documentElement;
+  try {
+    var ok = ["cloud", "midnight", "mint", "blush"];
+    var t = localStorage.getItem("portfolio-theme");
+    if (ok.indexOf(t) < 0) { t = window.matchMedia && matchMedia("(prefers-color-scheme: dark)").matches ? "midnight" : "cloud"; }
+    root.setAttribute("data-theme", t);
+  } catch (e) {}
+  root.classList.add("js");
+  setTimeout(function () { if (!window.__portfolioReady) { root.classList.remove("js"); } }, 3000);
+})();
+</script>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;700&family=Sora:wght@600;700;800&display=swap">
+<link rel="stylesheet" href="style.css?v=3">
+</head>
+<body>
+<div class="bg-motion" aria-hidden="true">
+  <span class="orb o5"></span>
+  <span class="orb o1"></span>
+  <span class="orb o2"></span>
+  <span class="orb o3"></span>
+  <span class="orb o4"></span>
+</div>
+<header class="site-header wrap">
+  <div class="bar">
+    <a class="logo" href="index.html" aria-label="Niranjan Chaudhari, home">
+      <span class="logo-mark" aria-hidden="true">N</span>
+      <span class="logo-text">Niranjan Chaudhari</span>
+    </a>
+    <div class="bar-right">
+      <nav aria-label="Main">
+        <ul class="nav-list" id="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="theme-btn" id="theme-btn" type="button" aria-label="Change background theme"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></svg><span class="theme-label">Theme</span></button>
+      <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="nav-list" aria-label="Open menu"><span class="bars"></span></button>
+    </div>
+  </div>
+</header>
+<main class="wrap" id="main">
+
+<section class="lost reveal" aria-labelledby="lost-h">
+  <p class="big" aria-hidden="true">404</p>
+  <h1 id="lost-h" style="font-size:clamp(1.6rem,5vw,2.4rem)">This page is not on the grid</h1>
+  <p class="lede">The link may be old or mistyped. Head back to a page that works.</p>
+  <div class="actions" style="justify-content:center">
+    <a class="btn primary" href="index.html">Go home</a>
+    <a class="btn" href="projects.html">View projects</a>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer wrap">
+  <div class="footer-inner">
+    <p>&copy; <span data-year>2026</span> Niranjan S. Chaudhari</p>
+    <ul class="footer-nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="index.html#certificates">Certificates</a></li>
+      <li><a href="https://www.linkedin.com/in/electricalniranjan" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+      <li><a href="mailto:niranjansunilchaudhari@gmail.com">Email</a></li>
+    </ul>
+  </div>
+</footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="script.js?v=3" defer></script>
+</body>
+</html>
